@@ -27,7 +27,7 @@ const Home = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get(`${window.location.origin}/equations/`)
+      .get('https://minmax-1.onrender.com/equations/')
       .then((response) => {
         setEquations(response.data);
       })
