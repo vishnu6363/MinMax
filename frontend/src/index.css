@@ -1,0 +1,278 @@
+/* Global Styles */
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body{
+  background-color: cadetblue;
+  margin: 0px;
+}
+
+/* Links */
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+/* Headers */
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+/* Buttons */
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* Media Queries for Light Mode */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+/* Forms and Inputs */
+form, input, label {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 13px;
+  color: #666;
+  line-height: 22px;
+}
+legend {
+  color: #fff;
+  background-color: #095484;
+  padding: 3px 5px;
+  font-size: 20px;
+}
+
+/* Layout */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.column {
+  flex: 1;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Test Box and Form Division */
+.testbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  padding: 20px;
+}
+.formDiv {
+  width: 100%;
+  height: 300px;
+  padding: 20px;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0 0 20px 0 #095484;
+}
+
+/* Banner */
+.banner {
+  position: relative;
+  height: 320px;
+  background-image: url("/uploads/media/default/0001/02/19ea6ba00def11fb8f5113a4d7555a97bd58ce3d.jpeg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.banner::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* Additional Styles */
+.inputStyles {
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.inputStyles {
+  width: calc(100% - 10px);
+  padding: 5px;
+}
+.buutonstye{
+  background-color: green;
+    padding-left: 20px;
+    margin-left: 50px;
+}
+.headerstyel{
+  margin-left: 40%;
+}
+
+.selectboxstyle{
+  height: -webkit-fill-available;
+  width: 100%;
+  font-size: large;
+  padding: 10px;
+}
+.selectdiv{
+  margin-left: 20px;
+}
+
+.p_text {
+  padding-top: 10px
+}
+.ptext{
+  font-size: large;
+  color: darkblue;
+}
+input{
+  margin-left: 7px;
+}
+.drag{
+  fill: #f2f6d5;
+}
+.newrow{
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.border{
+  border: double;
+}
+
+/* styles.css or App.css or any other CSS file */
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.modal.is-active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .modal-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+} */
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #333;
+}
+
+.box {
+  margin-bottom: 20px;
+}
+
+.label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.button {
+  margin-top: 10px;
+}
+
+.is-primary {
+  background-color: #3273dc;
+  color: #fff;
+}
+
+.is-light {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.field.is-grouped .control {
+  margin-top: 10px;
+}
+.modalinput{
+  width: 50%;
+}
+
+.margintop{
+  margin-top: 10px;
+}
+.marginleft{
+  margin-left: 10px;
+}
+.bccolor{
+  background-color: bisque;
+}
