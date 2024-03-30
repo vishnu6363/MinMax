@@ -37,7 +37,7 @@ const NewEquationModal = ({ isOpen, onClose }) => {
       "parametercount": parseInt(parameterCount) // Ensure parameterCount is converted to a number
     };
 
-    axios.post('http://localhost:5555/equations/', formData)
+    axios.post(`${window.location.origin}/equations/`, formData)
       .then((response) => {
         alert("Equation created successfully!!");
         onClose(); 
