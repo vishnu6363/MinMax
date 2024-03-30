@@ -37,7 +37,7 @@ const NewEquationModal = ({ isOpen, onClose }) => {
       "parametercount": parseInt(parameterCount) // Ensure parameterCount is converted to a number
     };
 
-    axios.post(`${window.location.origin}/equations/`, formData)
+    axios.post('https://minmax-1.onrender.com/equations/', formData)
       .then((response) => {
         alert("Equation created successfully!!");
         onClose(); 
