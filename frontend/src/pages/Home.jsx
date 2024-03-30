@@ -27,7 +27,7 @@ const Home = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get('http://localhost:5555/equations/')
+      .get(`${window.location.origin}/equations/`)
       .then((response) => {
         setEquations(response.data);
       })
